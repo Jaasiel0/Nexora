@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Productos | Nexora</title>
+  <link rel="stylesheet" href="estilos/productos.css">
+</head>
+<body>
+
+  <!-- Encabezado: logo a la izquierda, buscador y botones a la derecha -->
+  <header>
+    <a class="logo" href="index.html">NEXORA</a>
+    <nav>
+      <input type="search" placeholder="Buscar tenis...">
+      <a href="#">Contacto</a>
+      <a href="#">Carrito</a>
+      <a class="comprar" href="#">Comprar</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="titulo">
+      <h1>Nuestros productos</h1>
+      <p>9 productos</p>
+    </div>
+
+    <!-- Filtros a la izquierda y catálogo a la derecha -->
+    <div class="contenido">
+
+      <!-- Barra lateral de filtros (solo visual, no funciona) -->
+<aside>
+  <h2>Filtrar</h2>
+
+  <div class="grupo">
+    <h3>Categoría</h3>
+    <label><input type="checkbox"> Correr</label>
+    <label><input type="checkbox"> Entrenamiento</label>
+    <label><input type="checkbox"> Casual</label>
+    <label><input type="checkbox"> Básquetbol</label>
+    <label><input type="checkbox"> Caminar</label>
+  </div>
+
+  <div class="grupo">
+    <h3>Género</h3>
+    <label><input type="checkbox"> Hombre</label>
+    <label><input type="checkbox"> Mujer</label>
+    <label><input type="checkbox"> Unisex</label>
+  </div>
+
+  <div class="grupo">
+    <h3>Precio</h3>
+    <label><input type="checkbox"> Menos de $1,700</label>
+    <label><input type="checkbox"> $1,700 - $2,100</label>
+    <label><input type="checkbox"> $2,100 - $2,500</label>
+    <label><input type="checkbox"> Más de $2,500</label>
+  </div>
+
+  <div class="grupo tallas">
+    <h3>Talla</h3>
+    <label><input type="checkbox"> 24</label>
+    <label><input type="checkbox"> 25</label>
+    <label><input type="checkbox"> 26</label>
+    <label><input type="checkbox"> 27</label>
+    <label><input type="checkbox"> 28</label>
+    <label><input type="checkbox"> 29</label>
+  </div>
+</aside>
+
+      <!-- Catálogo: cada tenis es un enlace con imagen, nombre, descripción y precio -->
+      <section class="catalogo">
+
+        <article>
+          <a href="#">
+            <img src="imagenes/tenis_destacado.jpg" alt="Nexora Apex">
+            <div class="info">
+              <span class="etiqueta">⭐ Destacado</span>
+              <h3>Nexora Apex</h3>
+              <p>Tenis premium de alto rendimiento</p>
+              <strong>$3,499</strong>
+            </div>
+          </a>
+        </article>
+
+        <article>
+          <a href="#">
+            <img src="imagenes/tenis_deportivos_blancos_rojos.jpg" alt="Nexora Pulse">
+            <div class="info">
+              <h3>Nexora Pulse</h3>
+              <p>Tenis deportivos para uso diario</p>
+              <strong>$1,699</strong>
+            </div>
+          </a>
+        </article>
+
+        <article>
+          <a href="#">
+            <img src="imagenes/tenis_caminar_azul_claro.jpg" alt="Nexora Comfort">
+            <div class="info">
+              <h3>Nexora Comfort</h3>
+              <p>Tenis cómodos para caminar</p>
+              <strong>$1,599</strong>
+            </div>
+          </a>
+        </article>
+
+        <article>
+          <a href="#">
+            <img src="imagenes/tenis_basquetbol.jpg" alt="Nexora Elevate">
+            <div class="info">
+              <h3>Nexora Elevate</h3>
+              <p>Tenis de básquetbol para cancha</p>
+              <strong>$2,399</strong>
+            </div>
+          </a>
+        </article>
+
+        <article>
+          <a href="#">
+            <img src="imagenes/tenis_entrenamineto_negro_rojo.jpg" alt="Nexora Force">
+            <div class="info">
+              <h3>Nexora Force</h3>
+              <p>Tenis deportivos para gimnasio</p>
+              <strong>$2,099</strong>
+            </div>
+          </a>
+        </article>
+
+        <article>
+          <a href="#">
+            <img src="imagenes/tenis_negro_azul.jpg" alt="Nexora Flux">
+            <div class="info">
+              <h3>Nexora Flux</h3>
+              <p>Tenis deportivos para entrenamiento</p>
+              <strong>$1,899</strong>
+            </div>
+          </a>
+        </article>
+
+        <article>
+          <a href="#">
+            <img src="imagenes/tenis_running_azul_electrico.jpg" alt="Nexora Velocity">
+            <div class="info">
+              <h3>Nexora Velocity</h3>
+              <p>Tenis para correr en pavimento</p>
+              <strong>$2,299</strong>
+            </div>
+          </a>
+        </article>
+
+        <article>
+          <a href="#">
+            <img src="imagenes/tenis_urbano-deportivo.jpg" alt="Nexora Edge">
+            <div class="info">
+              <h3>Nexora Edge</h3>
+              <p>Tenis urbanos para hombre y mujer</p>
+              <strong>$1,999</strong>
+            </div>
+          </a>
+        </article>
+
+        <article>
+          <a href="#">
+            <img src="imagenes/sneakers_cafe.jpg" alt="Nexora Drift">
+            <div class="info">
+              <h3>Nexora Drift</h3>
+              <p>Tenis casuales para uso diario</p>
+              <strong>$1,799</strong>
+            </div>
+          </a>
+        </article>
+
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Nexora. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

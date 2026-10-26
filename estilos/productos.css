@@ -1,0 +1,229 @@
+/* ===== Fuente Inter: un bloque por cada grosor (400, 600, 700 y 800) ===== */
+@font-face {
+  font-family: "Inter";
+  src: url("../fuentes/Inter/Inter-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fuentes/Inter/Inter-SemiBold.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fuentes/Inter/Inter-Bold.otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fuentes/Inter/Inter-ExtraBold.otf");
+  font-weight: 800;
+}
+
+/* ===== Estilos generales ===== */
+/* Quita los márgenes que el navegador pone por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  color: #111111;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== Encabezado ===== */
+header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 40px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+nav {
+  flex: 1;                /* ocupa el espacio que sobra */
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+nav input {
+  width: 320px;
+  margin: 0 auto;         /* lo centra entre el logo y los botones */
+  padding: 10px 20px;
+  font-family: inherit;
+  font-size: 14px;
+  border: none;
+  border-radius: 24px;
+  background: #F5F5F5;
+}
+
+nav a {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #6B7280;
+}
+
+.comprar {
+  padding: 10px 24px;
+  color: #FFFFFF;
+  background: #111111;
+  border-radius: 24px;
+}
+
+.comprar:hover {
+  color: #FFFFFF;
+  background: #2563EB;
+}
+
+/* ===== Título de la página ===== */
+.titulo {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 40px 40px 24px;
+}
+
+.titulo h1 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.titulo p {
+  font-size: 14px;
+  color: #6B7280;
+}
+
+/* ===== Filtros (izquierda) y catálogo (derecha) ===== */
+.contenido {
+  display: flex;
+  gap: 40px;
+  padding: 0 40px 60px;
+}
+
+/* ===== Barra lateral de filtros ===== */
+aside {
+  width: 240px;
+}
+
+aside h2 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.grupo {
+  border-top: 1px solid #E5E5E5;
+  padding: 16px 0;
+}
+
+.grupo h3 {
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.grupo label {
+  display: block;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+.grupo input {
+  margin-right: 8px;
+}
+
+/* Las tallas son cuadritos en lugar de una lista */
+.tallas label {
+  display: inline-block;
+  width: 70px;
+  margin: 0 6px 8px 0;
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid #E5E5E5;
+}
+
+.tallas input {
+  display: none;          /* oculta el checkbox y deja solo el cuadrito */
+}
+
+/* ===== Catálogo: 3 columnas ===== */
+.catalogo {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px 16px;         /* 32px entre filas y 16px entre columnas */
+}
+
+/* Efecto al pasar el cursor: el tenis sube un poco y el nombre se subraya */
+article a {
+  display: block;
+  transition: transform 0.2s;
+}
+
+article a:hover {
+  transform: translateY(-4px);
+}
+
+article a:hover h3 {
+  text-decoration: underline;
+}
+
+article img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;    /* imagen cuadrada */
+  object-fit: cover;      /* la imagen llena el cuadro sin deformarse */
+  background: #F5F5F5;
+}
+
+.info {
+  padding: 12px 0;
+}
+
+.etiqueta {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2563EB;
+}
+
+.info h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.info p {
+  margin: 2px 0 8px;
+  font-size: 14px;
+  color: #6B7280;
+}
+
+.info strong {
+  font-size: 16px;
+}
+
+/* ===== Pie de página ===== */
+footer {
+  padding: 32px 40px;
+  font-size: 14px;
+  color: #FFFFFF;
+  background: #111111;
+}
